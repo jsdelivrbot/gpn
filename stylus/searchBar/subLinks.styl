@@ -1,0 +1,25 @@
+@import '../_vars'
+.subLinks
+  horizontalCenter()
+  border-bottom-width: 1px
+  border-bottom-style: solid
+  border-bottom-color: gpn_lighter_grey
+  .container_1080
+    horizontalCenter()
+    justify-content: space-between
+    .link
+      sans(300)
+      font-size: 0.9em
+      color: gpn_grey
+      transition: color 150ms
+      text-decoration: none
+      padding: 0.7em
+      border-color: transparent;
+      border-style: solid;
+      border-width: 3px;
+      transition: border-bottom-color 100ms
+      &:hover
+        color: gpn_black
+        border-bottom-color: gpn_green;
+        border-style: solid;
+        border-width: 3px;
