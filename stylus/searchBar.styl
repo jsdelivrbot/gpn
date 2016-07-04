@@ -1,0 +1,51 @@
+@import './_vars.styl'
+paddingH()
+  padding-left: arguments
+  padding-right: arguments
+
+.searchBar
+  background-color: gpn_green
+
+  .wrapper
+    padding: 1em
+    display: flex
+    flex-direction: row
+    align-items: space-around
+    vertical-align: middle
+    justify-content: center
+    .title
+      align-self: center
+      font-family: ITC
+      font-weight: 200px
+      letter-spacing: 1px
+      font-size: 1.7em
+      color: gpn_white
+      paddingH(10px)
+
+    .searchArea
+      display: flex
+      flex-direction: row
+      width: 658px
+      justify-content: flex-end
+      paddingH(10px)
+      &:before
+        position: relative
+        z-index: 10
+        left: 10px
+        color: #333
+        text-align: center
+        content: "a"
+      .search
+        font-family: HelveticaNeue
+        width: 100%
+        font-weight: 400
+        z-index: 2
+        margin: 0
+        padding: 0 10px
+        padding-left: 28px
+        font-size: 1em
+        border: 0
+        height: 35px
+        box-sizing: border-box
+        border-color: gpn_input_border_color
+        border-radius: gpn_input_border_radius

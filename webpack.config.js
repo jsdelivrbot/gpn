@@ -17,7 +17,7 @@ module.exports = {
     loaders: [
       { test: /\.css$/, loader: 'style!css' },
       { test: /\.styl$/, loader: 'style-loader!css-loader!stylus-loader' },
-      { test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/, loader: 'file-loader' },
+      { test: /\.(ttf|eot|svg|woff(2)|otf?)(\?[a-z0-9=&.]+)?$/, loader: 'file-loader' },
       {
         test: /\.js$/,
         exclude: /(node_modules|bower_components)/,
