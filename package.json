@@ -4,11 +4,25 @@
   "description": "cool cv gpn",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --progress --colors",
+    "dev": "webpack-dev-server --progress --colors"
   },
   "author": "fforres",
   "license": "MIT",
-  "dependencies": {
-    "webpack": "^1.13.1"
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.10.4",
+    "babel-eslint": "^6.1.0",
+    "babel-loader": "^6.2.4",
+    "babel-preset-node6": "^11.0.0",
+    "eslint": "^3.0.0",
+    "eslint-config-groupon": "^3.0.0",
+    "eslint-plugin-import": "^1.10.1",
+    "file-loader": "^0.9.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^2.1.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
   }
 }
