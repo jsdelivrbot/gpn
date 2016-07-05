@@ -4,3 +4,6 @@ export { fonts } from './fonts.styl';
 export { searchBar } from './searchBar/searchBar.styl';
 export { smallTopBar } from './searchBar/smallTopBar.styl';
 export { subLinks } from './searchBar/subLinks.styl';
+// body
+export { title } from './body/title.styl';
+export { content } from './body/content.styl';
