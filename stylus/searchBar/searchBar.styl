@@ -1,0 +1,45 @@
+@import '../_vars.styl'
+.searchBar
+  background-color: gpn_green
+  padding-bottom: 1.3em
+  horizontalCenter()
+  paddingH(10px)
+
+  .wrapper
+    horizontalCenter()
+    align-items: space-around
+
+    .title
+      align-self: center
+      text-transform: uppercase;
+      font-family: ITC
+      font-weight: 100
+      letter-spacing: -0.045em
+      font-size: 1.7em
+      color: gpn_white
+      margin-right: 15px
+
+    .searchArea
+      horizontalCenter()
+      width: 100%
+      .icon
+        align-self: center;
+        position: relative
+        left: 1.1em
+        top: 2px
+        font-size: 1.5em
+        z-index: 10
+        color: gpn_grey
+
+      .search
+        sans(300)
+        color: gpn_grey
+        width: 100%
+        z-index: 2
+        margin: 0
+        padding-left: 2.6em
+        font-size: 0.8em
+        height: 35px
+        border-width: 0
+        border-color: gpn_input_border_color
+        border-radius: gpn_input_border_radius
