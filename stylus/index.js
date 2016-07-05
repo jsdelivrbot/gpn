@@ -7,3 +7,7 @@ export { subLinks } from './searchBar/subLinks.styl';
 // body
 export { title } from './body/title.styl';
 export { content } from './body/content.styl';
+// also
+export { also } from './also/also.styl';
+// footer
+export { footer } from './footer/footer.styl';

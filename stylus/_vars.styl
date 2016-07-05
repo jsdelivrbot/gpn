@@ -6,6 +6,7 @@ gpn_black = #333
 gpn_grey = #75787b
 gpn_light_grey = #a5a8ab
 gpn_lighter_grey = #d5d8db
+gpn_lightest_grey = #f2f2f2
 gpn_input_border_color = gpn_black
 gpn_input_border_radius = 2px
 
@@ -16,6 +17,12 @@ sans() {
 paddingH() {
   padding-left: arguments
   padding-right: arguments
+}
+verticalCenter(){
+  display: flex
+  vertical-align: top;
+  justify-content: center
+  flex-direction: column;
 }
 horizontalCenter() {
   display: flex
@@ -28,5 +35,8 @@ horizontalCenter() {
   width: 100%;
 
 .container_670
-  max-width 670px
+  max-width 690px
   width 100%
+
+.vertical
+  flex-direction: column !important;
