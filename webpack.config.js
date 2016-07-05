@@ -31,6 +31,8 @@ module.exports = {
           partialDirs: [
             path.join(__dirname, 'template', 'searchBar'),
             path.join(__dirname, 'template', 'body'),
+            path.join(__dirname, 'template', 'footer'),
+            path.join(__dirname, 'template', 'also'),
             path.join(__dirname, 'template'),
           ],
         },
