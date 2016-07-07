@@ -3,13 +3,17 @@
 body
   margin 0
   animation all 150ms
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
 
 h1, h2, h3, h4, h5, p, li, ol
   sans(300)
   line-height: 1.5em
   color gpn_grey
+  // hacks for font smoothing
+  text-shadow: 0 0 1px rgba(0,0,0,0.2);
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility;
+  font-smooth: always;
 
 p,li,ol
   font-size: 0.95em

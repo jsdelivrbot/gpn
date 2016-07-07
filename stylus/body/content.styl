@@ -1,4 +1,15 @@
 @import '../_vars.styl'
+sideText() {
+  display flex
+  justify-content: center;
+  vertical-align text-top;
+  text-align: justify;
+  width: 100%
+}
+paddingV(){
+  padding-top: arguments
+  padding-bottom: arguments
+}
 .bodyContent
   padding 1em
   horizontalCenter()
@@ -23,18 +34,81 @@
         width 50%
         padding-bottom 4em
   .bodySize
+    display: flex
     width: 250px
   .container_250
+    padding: 1em
     display: flex
     align-items: flex-end;
+    flex-direction: column;
     vertical-align: top;
     justify-content: center
     text-align: center;
-    .button
-      background-color gpn_green
+    .buttonWrapper
+      display: flex
+      flex: 1
+      justify-content: center
+      vertical-align: middle;
+      width: 100%
+
+      .button
+        sans(400)
+        width: 100%
+        display: flex
+        justify-content: center
+        vertical-align: middle;
+        background-color gpn_green
+        border-radius 80px
+        font-size 1.3em
+        padding: 1em
+        margin-bottom: 1em
+        color: gpn_white
+
     .description
-      color none
+      sans(100)
+      sideText()
+      flex-direction: column;
+      margin-bottom: 0
+      .nutshell
+        align-self: left
+        padding: 0
+      .paragraph
+        sideText()
+        sans(100)
+        flex-direction: column;
+        paddingV(0.5em)
+
+    .alert
+      sans(100)
+      sideText()
+      paddingV(1.5em)
+      color: red
+      align-self: center;
+      .icon
+        padding-right: 0.5em
     .share
-      color none
-    .finePrint
-      color none
+      sideText()
+      paddingV(1.5em)
+      flex-direction: column;
+      .title
+        padding: 0
+      .links
+        padding-top: 1em
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around
+        a
+          text-decoration none;
+          color gpn_grey
+          transition: color 200ms
+          &:hover
+            color gpn_green
+            .icon
+              font-size: 1.8em
+          .icon
+            transition: font-size 200ms
+            font-size: 1.6em
+    .borderize
+      border-top-color: gpn_lighter_grey
+      border-top-width: 1px
+      border-top-style: solid
