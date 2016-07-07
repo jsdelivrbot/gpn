@@ -5,7 +5,7 @@ export default (document) => {
     FB.ui({
       method: 'share',
       display: 'popup',
-      href: 'http://fforr.es/gpn',
+      href: 'http://www.fforr.es/gpn',
     }, (response) => {
       console.log(response);
     });
