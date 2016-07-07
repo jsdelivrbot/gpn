@@ -1,7 +1,6 @@
 export const pinterest = () => {
   window.pAsyncInit = () => {
-    window.PDK = {};
-    window.PDK.init({
+    PDK.init({
       appId: '4844179537688276452', // Change this
       cookie: true,
     });

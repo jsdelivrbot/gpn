@@ -54,7 +54,9 @@
 
 	var _facebook = __webpack_require__(31);
 
-	var _sharing = __webpack_require__(32);
+	var _pinterest = __webpack_require__(32);
+
+	var _sharing = __webpack_require__(33);
 
 	var _sharing2 = _interopRequireDefault(_sharing);
 
@@ -62,6 +64,7 @@
 
 	window.twttr = (0, _twitter.twitter)();
 	(0, _facebook.facebook)();
+	(0, _pinterest.pinterest)();
 	(0, _sharing2.default)(document);
 
 /***/ },
@@ -794,7 +797,7 @@
 	exports.i(__webpack_require__(5), "");
 
 	// module
-	exports.push([module.id, ".container_1080 {\n  max-width: 1080px;\n  width: 100%;\n}\n.container_670 {\n  max-width: 690px;\n  width: 100%;\n}\n.container_250 {\n  max-width: 250px;\n  width: 100%;\n}\n.vertical {\n  flex-direction: column !important;\n}\n.bodyContent {\n  padding: 1em;\n  display: flex;\n  vertical-align: middle;\n  justify-content: center;\n  flex-direction: row;\n}\n.bodyContent .container_1080 .columnize {\n  display: flex;\n  flex-direction: row;\n}\n.bodyContent .container_1080 .columnize img {\n  width: 100%;\n  height: auto;\n  max-width: 670px;\n}\n.bodyContent .container_1080 .columnize .bodyDescription {\n  align: justify;\n}\n.bodyContent .container_1080 .columnize .bodyDescription a {\n  text-decoration: none;\n  color: #53a318;\n}\n.bodyContent .container_1080 .columnize .bodyDescription a:visited {\n  color: #666;\n}\n.bodyContent .container_1080 .columnize .bodyDescription a:hover {\n  color: #2fabef;\n}\n.bodyContent .container_1080 .columnize .map {\n  width: 50%;\n  padding-bottom: 4em;\n}\n.bodyContent .bodySize {\n  display: flex;\n  width: 250px;\n}\n.bodyContent .container_250 {\n  padding: 1em;\n  display: flex;\n  align-items: flex-end;\n  flex-direction: column;\n  vertical-align: top;\n  justify-content: center;\n  text-align: center;\n}\n.bodyContent .container_250 .buttonWrapper {\n  display: flex;\n  flex: 1;\n  justify-content: center;\n  vertical-align: middle;\n  width: 100%;\n}\n.bodyContent .container_250 .buttonWrapper .button {\n  font-family: 'Open Sans', sans-serif;\n  font-weight: 400;\n  width: 100%;\n  display: flex;\n  justify-content: center;\n  vertical-align: middle;\n  background-color: #53a318;\n  border-radius: 80px;\n  font-size: 1.3em;\n  padding: 1em;\n  margin-bottom: 1em;\n  color: #fff;\n}\n.bodyContent .container_250 .description {\n  font-family: 'Open Sans', sans-serif;\n  font-weight: 100;\n  display: flex;\n  justify-content: center;\n  vertical-align: text-top;\n  text-align: justify;\n  width: 100%;\n  flex-direction: column;\n  margin-bottom: 0;\n}\n.bodyContent .container_250 .description .nutshell {\n  align-self: left;\n  padding: 0;\n}\n.bodyContent .container_250 .description .paragraph {\n  display: flex;\n  justify-content: center;\n  vertical-align: text-top;\n  text-align: justify;\n  width: 100%;\n  font-family: 'Open Sans', sans-serif;\n  font-weight: 100;\n  flex-direction: column;\n  padding-top: 0.5em;\n  padding-bottom: 0.5em;\n}\n.bodyContent .container_250 .alert {\n  font-family: 'Open Sans', sans-serif;\n  font-weight: 100;\n  display: flex;\n  justify-content: center;\n  vertical-align: text-top;\n  text-align: justify;\n  width: 100%;\n  padding-top: 1.5em;\n  padding-bottom: 1.5em;\n  color: #f00;\n  align-self: center;\n}\n.bodyContent .container_250 .alert .icon {\n  padding-right: 0.5em;\n}\n.bodyContent .container_250 .share {\n  display: flex;\n  justify-content: center;\n  vertical-align: text-top;\n  text-align: justify;\n  width: 100%;\n  padding-top: 1.5em;\n  padding-bottom: 1.5em;\n  flex-direction: column;\n}\n.bodyContent .container_250 .share .title {\n  padding: 0;\n}\n.bodyContent .container_250 .share .links {\n  padding-top: 1em;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-around;\n}\n.bodyContent .container_250 .share .links a {\n  text-decoration: none;\n  color: #75787b;\n  transition: color 200ms;\n}\n.bodyContent .container_250 .share .links a:hover {\n  color: #53a318;\n}\n.bodyContent .container_250 .share .links a:hover .icon {\n  font-size: 1.8em;\n}\n.bodyContent .container_250 .share .links a .icon {\n  transition: font-size 200ms;\n  font-size: 1.6em;\n}\n.bodyContent .container_250 .borderize {\n  border-top-color: #d5d8db;\n  border-top-width: 1px;\n  border-top-style: solid;\n}\n", ""]);
+	exports.push([module.id, ".container_1080 {\n  max-width: 1080px;\n  width: 100%;\n}\n.container_670 {\n  max-width: 690px;\n  width: 100%;\n}\n.container_250 {\n  max-width: 250px;\n  width: 100%;\n}\n.vertical {\n  flex-direction: column !important;\n}\n.bodyContent {\n  padding: 1em;\n  display: flex;\n  vertical-align: middle;\n  justify-content: center;\n  flex-direction: row;\n}\n.bodyContent .container_1080 .columnize {\n  display: flex;\n  flex-direction: row;\n}\n.bodyContent .container_1080 .columnize img {\n  width: 100%;\n  height: auto;\n  max-width: 670px;\n}\n.bodyContent .container_1080 .columnize .bodyDescription {\n  align: justify;\n}\n.bodyContent .container_1080 .columnize .bodyDescription a {\n  text-decoration: none;\n  color: #53a318;\n}\n.bodyContent .container_1080 .columnize .bodyDescription a:visited {\n  color: #666;\n}\n.bodyContent .container_1080 .columnize .bodyDescription a:hover {\n  color: #2fabef;\n}\n.bodyContent .container_1080 .columnize .map {\n  width: 50%;\n  padding-bottom: 4em;\n}\n.bodyContent .bodySize {\n  display: flex;\n  width: 250px;\n}\n.bodyContent .container_250 {\n  padding: 1em;\n  display: flex;\n  align-items: flex-end;\n  flex-direction: column;\n  vertical-align: top;\n  justify-content: center;\n  text-align: center;\n}\n.bodyContent .container_250 .buttonWrapper {\n  display: flex;\n  flex: 1;\n  justify-content: center;\n  vertical-align: middle;\n  width: 100%;\n}\n.bodyContent .container_250 .buttonWrapper .button {\n  font-family: 'Open Sans', sans-serif;\n  font-weight: 400;\n  width: 100%;\n  display: flex;\n  justify-content: center;\n  vertical-align: middle;\n  background-color: #53a318;\n  border-radius: 80px;\n  font-size: 1.3em;\n  padding: 1em;\n  margin-bottom: 1em;\n  color: #fff;\n}\n.bodyContent .container_250 .description {\n  font-family: 'Open Sans', sans-serif;\n  font-weight: 100;\n  display: flex;\n  justify-content: center;\n  vertical-align: text-top;\n  text-align: justify;\n  width: 100%;\n  flex-direction: column;\n  margin-bottom: 0;\n}\n.bodyContent .container_250 .description .nutshell {\n  align-self: left;\n  padding: 0;\n}\n.bodyContent .container_250 .description .paragraph {\n  display: flex;\n  justify-content: center;\n  vertical-align: text-top;\n  text-align: justify;\n  width: 100%;\n  font-family: 'Open Sans', sans-serif;\n  font-weight: 100;\n  flex-direction: column;\n  padding-top: 0.5em;\n  padding-bottom: 0.5em;\n}\n.bodyContent .container_250 .alert {\n  font-family: 'Open Sans', sans-serif;\n  font-weight: 100;\n  display: flex;\n  justify-content: center;\n  vertical-align: text-top;\n  text-align: justify;\n  width: 100%;\n  padding-top: 1.5em;\n  padding-bottom: 1.5em;\n  margin-bottom: 0;\n  color: #f00;\n  align-self: center;\n}\n.bodyContent .container_250 .alert .icon {\n  padding-right: 0.5em;\n}\n.bodyContent .container_250 .share {\n  display: flex;\n  justify-content: center;\n  vertical-align: text-top;\n  text-align: justify;\n  width: 100%;\n  padding-top: 1.5em;\n  padding-bottom: 1.5em;\n  flex-direction: column;\n}\n.bodyContent .container_250 .share .title {\n  padding: 0;\n}\n.bodyContent .container_250 .share .links {\n  padding-top: 1em;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-around;\n}\n.bodyContent .container_250 .share .links a {\n  text-decoration: none;\n  color: #75787b;\n  transition: color 200ms;\n}\n.bodyContent .container_250 .share .links a:hover {\n  color: #53a318;\n}\n.bodyContent .container_250 .share .links a:hover .icon {\n  font-size: 1.8em;\n}\n.bodyContent .container_250 .share .links a .icon {\n  transition: font-size 200ms;\n  font-size: 1.6em;\n}\n.bodyContent .container_250 .borderize {\n  border-top-color: #d5d8db;\n  border-top-width: 1px;\n  border-top-style: solid;\n}\n", ""]);
 
 	// exports
 
@@ -937,6 +940,35 @@
 
 /***/ },
 /* 32 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	const pinterest = exports.pinterest = () => {
+	  window.pAsyncInit = () => {
+	    PDK.init({
+	      appId: '4844179537688276452', // Change this
+	      cookie: true
+	    });
+	  };
+
+	  const p = (d, s, id) => {
+	    const pjs = d.getElementsByTagName(s)[0];
+	    if (d.getElementById(id)) {
+	      return;
+	    }
+	    const js = d.createElement(s);js.id = id;
+	    js.src = '//assets.pinterest.com/sdk/sdk.js';
+	    pjs.parentNode.insertBefore(js, pjs);
+	  };
+	  p(document, 'script', 'pinterest-jssdk');
+	};
+
+/***/ },
+/* 33 */
 /***/ function(module, exports) {
 
 	'use strict';
