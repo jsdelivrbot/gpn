@@ -50,7 +50,19 @@
 
 	var _stylus2 = _interopRequireDefault(_stylus);
 
+	var _twitter = __webpack_require__(30);
+
+	var _facebook = __webpack_require__(31);
+
+	var _sharing = __webpack_require__(32);
+
+	var _sharing2 = _interopRequireDefault(_sharing);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	window.twttr = (0, _twitter.twitter)();
+	(0, _facebook.facebook)();
+	(0, _sharing2.default)(document);
 
 /***/ },
 /* 1 */
@@ -178,7 +190,7 @@
 	exports.i(__webpack_require__(5), "");
 
 	// module
-	exports.push([module.id, ".container_1080 {\n  max-width: 1080px;\n  width: 100%;\n}\n.container_670 {\n  max-width: 690px;\n  width: 100%;\n}\n.vertical {\n  flex-direction: column !important;\n}\nbody {\n  margin: 0;\n  animation: all 150ms;\n  -webkit-font-smoothing: antialiased;\n  text-rendering: optimizeLegibility;\n}\nh1,\nh2,\nh3,\nh4,\nh5,\np,\nli,\nol {\n  font-family: 'Open Sans', sans-serif;\n  font-weight: 300;\n  line-height: 1.5em;\n  color: #75787b;\n}\np,\nli,\nol {\n  font-size: 0.95em;\n  font-weight: 400;\n}\n::selection {\n  background-color: #53a318;\n  color: #fff;\n}\nh1 {\n  letter-spacing: -1px;\n  font-size: 2.2em;\n  color: #333;\n}\nh2 {\n  font-size: 1.2em;\n}\nh4 {\n  font-size: 1.55em;\n  margin: 0;\n  padding-top: 1em;\n  padding-bottom: 0.3em;\n}\np {\n  word-wrap: break-word;\n  box-sizing: border-box;\n  margin: 0 0 20px;\n  line-height: 1.55em;\n}\nhr.dotted {\n  border-top: dashed #a5a8ab 1px;\n}\nhr.light {\n  border-top: solid #d5d8db 1px;\n}\n", ""]);
+	exports.push([module.id, ".container_1080 {\n  max-width: 1080px;\n  width: 100%;\n}\n.container_670 {\n  max-width: 690px;\n  width: 100%;\n}\n.container_250 {\n  max-width: 250px;\n  width: 100%;\n}\n.vertical {\n  flex-direction: column !important;\n}\nbody {\n  margin: 0;\n  animation: all 150ms;\n}\nh1,\nh2,\nh3,\nh4,\nh5,\np,\nli,\nol {\n  font-family: 'Open Sans', sans-serif;\n  font-weight: 300;\n  line-height: 1.5em;\n  color: #75787b;\n  text-shadow: 0 0 1px rgba(0,0,0,0.2);\n  -webkit-font-smoothing: antialiased;\n}\n-moz-osx-font-smoothing: grayscale {\n  text-rendering: optimizeLegibility;\n  font-smooth: always;\n}\np,\nli,\nol {\n  font-size: 0.95em;\n  font-weight: 400;\n}\n::selection {\n  background-color: #53a318;\n  color: #fff;\n}\nh1 {\n  letter-spacing: -1px;\n  font-size: 2.2em;\n  color: #333;\n}\nh2 {\n  font-size: 1.2em;\n}\nh4 {\n  font-size: 1.55em;\n  margin: 0;\n  padding-top: 1em;\n  padding-bottom: 0.3em;\n}\np {\n  word-wrap: break-word;\n  box-sizing: border-box;\n  margin: 0 0 20px;\n  line-height: 1.55em;\n}\nhr.dotted {\n  border-top: dashed #a5a8ab 1px;\n}\nhr.light {\n  border-top: solid #d5d8db 1px;\n}\n", ""]);
 
 	// exports
 
@@ -622,7 +634,7 @@
 	exports.i(__webpack_require__(5), "");
 
 	// module
-	exports.push([module.id, ".container_1080 {\n  max-width: 1080px;\n  width: 100%;\n}\n.container_670 {\n  max-width: 690px;\n  width: 100%;\n}\n.vertical {\n  flex-direction: column !important;\n}\n.searchBar {\n  background-color: #53a318;\n  padding-bottom: 1.3em;\n  display: flex;\n  vertical-align: middle;\n  justify-content: center;\n  flex-direction: row;\n  padding-left: 10px;\n  padding-right: 10px;\n}\n.searchBar .wrapper {\n  display: flex;\n  vertical-align: middle;\n  justify-content: center;\n  flex-direction: row;\n  align-items: space-around;\n}\n.searchBar .wrapper .title {\n  align-self: center;\n  text-transform: uppercase;\n  font-family: ITC;\n  font-weight: 100;\n  letter-spacing: -0.045em;\n  font-size: 1.7em;\n  color: #fff;\n  margin-right: 15px;\n}\n.searchBar .wrapper .searchArea {\n  display: flex;\n  vertical-align: middle;\n  justify-content: center;\n  flex-direction: row;\n  width: 100%;\n}\n.searchBar .wrapper .searchArea .icon {\n  align-self: center;\n  position: relative;\n  left: 1.1em;\n  top: 2px;\n  font-size: 1.5em;\n  z-index: 10;\n  color: #75787b;\n}\n.searchBar .wrapper .searchArea .search {\n  font-family: 'Open Sans', sans-serif;\n  font-weight: 300;\n  color: #75787b;\n  width: 100%;\n  z-index: 2;\n  margin: 0;\n  padding-left: 2.6em;\n  font-size: 0.8em;\n  height: 35px;\n  border-width: 0;\n  border-color: #333;\n  border-radius: 2px;\n}\n", ""]);
+	exports.push([module.id, ".container_1080 {\n  max-width: 1080px;\n  width: 100%;\n}\n.container_670 {\n  max-width: 690px;\n  width: 100%;\n}\n.container_250 {\n  max-width: 250px;\n  width: 100%;\n}\n.vertical {\n  flex-direction: column !important;\n}\n.searchBar {\n  background-color: #53a318;\n  padding-bottom: 1.3em;\n  display: flex;\n  vertical-align: middle;\n  justify-content: center;\n  flex-direction: row;\n  padding-left: 10px;\n  padding-right: 10px;\n}\n.searchBar .wrapper {\n  display: flex;\n  vertical-align: middle;\n  justify-content: center;\n  flex-direction: row;\n  align-items: space-around;\n}\n.searchBar .wrapper .title {\n  align-self: center;\n  text-transform: uppercase;\n  font-family: ITC;\n  font-weight: 100;\n  letter-spacing: -0.045em;\n  font-size: 1.7em;\n  color: #fff;\n  margin-right: 15px;\n}\n.searchBar .wrapper .searchArea {\n  display: flex;\n  vertical-align: middle;\n  justify-content: center;\n  flex-direction: row;\n  width: 100%;\n}\n.searchBar .wrapper .searchArea .icon {\n  align-self: center;\n  position: relative;\n  left: 1.1em;\n  top: 2px;\n  font-size: 1.5em;\n  z-index: 10;\n  color: #75787b;\n}\n.searchBar .wrapper .searchArea .search {\n  font-family: 'Open Sans', sans-serif;\n  font-weight: 300;\n  color: #75787b;\n  width: 100%;\n  z-index: 2;\n  margin: 0;\n  padding-left: 2.6em;\n  font-size: 0.8em;\n  height: 35px;\n  border-width: 0;\n  border-color: #333;\n  border-radius: 2px;\n}\n", ""]);
 
 	// exports
 
@@ -662,7 +674,7 @@
 	exports.i(__webpack_require__(5), "");
 
 	// module
-	exports.push([module.id, ".container_1080 {\n  max-width: 1080px;\n  width: 100%;\n}\n.container_670 {\n  max-width: 690px;\n  width: 100%;\n}\n.vertical {\n  flex-direction: column !important;\n}\n.smallTopBar {\n  display: flex;\n  justify-content: flex-end;\n  padding-bottom: 0.4em;\n  padding-top: 0.4em;\n}\n.smallTopBar .nav .link {\n  font-family: 'Open Sans', sans-serif;\n  font-weight: 300;\n  font-size: 0.7em;\n  color: #fff;\n  margin-left: 1.5em;\n  text-decoration: none;\n}\n.smallTopBar .nav .link:hover {\n  color: #a9d18c;\n}\n.smallTopBar .nav .link .icon {\n  padding-left: 0.3em;\n  padding-right: 0.3em;\n  font-size: 1em;\n  background: none;\n}\n.smallTopBar .nav .link .text {\n  text-transform: capitalize;\n}\n", ""]);
+	exports.push([module.id, ".container_1080 {\n  max-width: 1080px;\n  width: 100%;\n}\n.container_670 {\n  max-width: 690px;\n  width: 100%;\n}\n.container_250 {\n  max-width: 250px;\n  width: 100%;\n}\n.vertical {\n  flex-direction: column !important;\n}\n.smallTopBar {\n  display: flex;\n  justify-content: flex-end;\n  padding-bottom: 0.4em;\n  padding-top: 0.4em;\n}\n.smallTopBar .nav .link {\n  font-family: 'Open Sans', sans-serif;\n  font-weight: 300;\n  font-size: 0.8em;\n  color: #fff;\n  margin-left: 1.5em;\n  text-decoration: none;\n}\n.smallTopBar .nav .link:hover {\n  color: #a9d18c;\n}\n.smallTopBar .nav .link .icon {\n  padding-left: 0.3em;\n  padding-right: 0.3em;\n  font-size: 1em;\n  background: none;\n}\n.smallTopBar .nav .link .text {\n  text-transform: capitalize;\n}\n", ""]);
 
 	// exports
 
@@ -702,7 +714,7 @@
 	exports.i(__webpack_require__(5), "");
 
 	// module
-	exports.push([module.id, ".container_1080 {\n  max-width: 1080px;\n  width: 100%;\n}\n.container_670 {\n  max-width: 690px;\n  width: 100%;\n}\n.vertical {\n  flex-direction: column !important;\n}\n.subLinks {\n  display: flex;\n  vertical-align: middle;\n  justify-content: center;\n  flex-direction: row;\n  border-bottom-width: 1px;\n  border-bottom-style: solid;\n  border-bottom-color: #d5d8db;\n}\n.subLinks .container_1080 {\n  display: flex;\n  vertical-align: middle;\n  justify-content: center;\n  flex-direction: row;\n  justify-content: space-between;\n}\n.subLinks .container_1080 .link {\n  font-family: 'Open Sans', sans-serif;\n  font-weight: 300;\n  font-size: 0.9em;\n  color: #75787b;\n  transition: color 150ms;\n  text-decoration: none;\n  padding: 0.7em;\n  border-color: transparent;\n  border-style: solid;\n  border-width: 3px;\n  transition: border-bottom-color 100ms;\n}\n.subLinks .container_1080 .link:hover {\n  color: #333;\n  border-bottom-color: #53a318;\n  border-style: solid;\n  border-width: 3px;\n}\n", ""]);
+	exports.push([module.id, ".container_1080 {\n  max-width: 1080px;\n  width: 100%;\n}\n.container_670 {\n  max-width: 690px;\n  width: 100%;\n}\n.container_250 {\n  max-width: 250px;\n  width: 100%;\n}\n.vertical {\n  flex-direction: column !important;\n}\n.subLinks {\n  display: flex;\n  vertical-align: middle;\n  justify-content: center;\n  flex-direction: row;\n  border-bottom-width: 1px;\n  border-bottom-style: solid;\n  border-bottom-color: #d5d8db;\n}\n.subLinks .container_1080 {\n  display: flex;\n  vertical-align: middle;\n  justify-content: center;\n  flex-direction: row;\n  justify-content: space-between;\n}\n.subLinks .container_1080 .link {\n  font-family: 'Open Sans', sans-serif;\n  font-weight: 300;\n  text-align: center;\n  font-size: 1em;\n  color: #75787b;\n  transition: color 150ms;\n  text-decoration: none;\n  padding: 0.7em;\n  border-color: transparent;\n  border-style: solid;\n  border-width: 3px;\n  transition: border-bottom-color 100ms;\n}\n.subLinks .container_1080 .link:hover {\n  color: #333;\n  border-bottom-color: #53a318;\n  border-style: solid;\n  border-width: 3px;\n}\n", ""]);
 
 	// exports
 
@@ -742,7 +754,7 @@
 	exports.i(__webpack_require__(5), "");
 
 	// module
-	exports.push([module.id, ".container_1080 {\n  max-width: 1080px;\n  width: 100%;\n}\n.container_670 {\n  max-width: 690px;\n  width: 100%;\n}\n.vertical {\n  flex-direction: column !important;\n}\n.bodyTitle {\n  margin-top: 1em;\n  padding: 10px;\n  display: flex;\n  vertical-align: middle;\n  justify-content: center;\n  flex-direction: row;\n}\n.bodyTitle .container_1080 .titleText {\n  line-height: 42px;\n  margin: 0;\n  padding-bottom: 0.2em;\n}\n.bodyTitle .container_1080 .subtitleText {\n  color: #666;\n  margin: 0;\n  padding-bottom: 0.1em;\n}\n.bodyTitle .container_1080 .subtitleText .Groupon {\n  font-weight: bold;\n  color: #53a318;\n}\n.bodyTitle .container_1080 .subtitleText a {\n  text-decoration: none;\n  transition: color 100ms;\n  margin-left: 1em;\n}\n.bodyTitle .container_1080 .subtitleText a:visited {\n  color: #666;\n}\n.bodyTitle .container_1080 .subtitleText a:hover {\n  color: #2fabef;\n}\n", ""]);
+	exports.push([module.id, ".container_1080 {\n  max-width: 1080px;\n  width: 100%;\n}\n.container_670 {\n  max-width: 690px;\n  width: 100%;\n}\n.container_250 {\n  max-width: 250px;\n  width: 100%;\n}\n.vertical {\n  flex-direction: column !important;\n}\n.bodyTitle {\n  margin-top: 1em;\n  padding: 10px;\n  display: flex;\n  vertical-align: middle;\n  justify-content: center;\n  flex-direction: row;\n}\n.bodyTitle .container_1080 .titleText {\n  line-height: 42px;\n  margin: 0;\n  padding-bottom: 0.2em;\n}\n.bodyTitle .container_1080 .subtitleText {\n  color: #666;\n  margin: 0;\n  padding-bottom: 0.1em;\n}\n.bodyTitle .container_1080 .subtitleText .Groupon {\n  font-weight: bold;\n  color: #53a318;\n}\n.bodyTitle .container_1080 .subtitleText a {\n  text-decoration: none;\n  transition: color 100ms;\n  margin-left: 1em;\n}\n.bodyTitle .container_1080 .subtitleText a:visited {\n  color: #666;\n}\n.bodyTitle .container_1080 .subtitleText a:hover {\n  color: #2fabef;\n}\n", ""]);
 
 	// exports
 
@@ -782,7 +794,7 @@
 	exports.i(__webpack_require__(5), "");
 
 	// module
-	exports.push([module.id, ".container_1080 {\n  max-width: 1080px;\n  width: 100%;\n}\n.container_670 {\n  max-width: 690px;\n  width: 100%;\n}\n.vertical {\n  flex-direction: column !important;\n}\n.bodyContent {\n  display: flex;\n  vertical-align: middle;\n  justify-content: center;\n  flex-direction: row;\n}\n.bodyContent .container_1080 img {\n  width: 100%;\n  height: auto;\n  max-width: 670px;\n}\n.bodyContent .container_1080 .bodyDescription {\n  align: justify;\n}\n.bodyContent .container_1080 .bodyDescription a {\n  text-decoration: none;\n  color: #53a318;\n}\n.bodyContent .container_1080 .bodyDescription a:visited {\n  color: #666;\n}\n.bodyContent .container_1080 .bodyDescription a:hover {\n  color: #2fabef;\n}\n.bodyContent .container_1080 .map {\n  width: 50%;\n  padding-bottom: 4em;\n}\n", ""]);
+	exports.push([module.id, ".container_1080 {\n  max-width: 1080px;\n  width: 100%;\n}\n.container_670 {\n  max-width: 690px;\n  width: 100%;\n}\n.container_250 {\n  max-width: 250px;\n  width: 100%;\n}\n.vertical {\n  flex-direction: column !important;\n}\n.bodyContent {\n  padding: 1em;\n  display: flex;\n  vertical-align: middle;\n  justify-content: center;\n  flex-direction: row;\n}\n.bodyContent .container_1080 .columnize {\n  display: flex;\n  flex-direction: row;\n}\n.bodyContent .container_1080 .columnize img {\n  width: 100%;\n  height: auto;\n  max-width: 670px;\n}\n.bodyContent .container_1080 .columnize .bodyDescription {\n  align: justify;\n}\n.bodyContent .container_1080 .columnize .bodyDescription a {\n  text-decoration: none;\n  color: #53a318;\n}\n.bodyContent .container_1080 .columnize .bodyDescription a:visited {\n  color: #666;\n}\n.bodyContent .container_1080 .columnize .bodyDescription a:hover {\n  color: #2fabef;\n}\n.bodyContent .container_1080 .columnize .map {\n  width: 50%;\n  padding-bottom: 4em;\n}\n.bodyContent .bodySize {\n  display: flex;\n  width: 250px;\n}\n.bodyContent .container_250 {\n  padding: 1em;\n  display: flex;\n  align-items: flex-end;\n  flex-direction: column;\n  vertical-align: top;\n  justify-content: center;\n  text-align: center;\n}\n.bodyContent .container_250 .buttonWrapper {\n  display: flex;\n  flex: 1;\n  justify-content: center;\n  vertical-align: middle;\n  width: 100%;\n}\n.bodyContent .container_250 .buttonWrapper .button {\n  font-family: 'Open Sans', sans-serif;\n  font-weight: 400;\n  width: 100%;\n  display: flex;\n  justify-content: center;\n  vertical-align: middle;\n  background-color: #53a318;\n  border-radius: 80px;\n  font-size: 1.3em;\n  padding: 1em;\n  margin-bottom: 1em;\n  color: #fff;\n}\n.bodyContent .container_250 .description {\n  font-family: 'Open Sans', sans-serif;\n  font-weight: 100;\n  display: flex;\n  justify-content: center;\n  vertical-align: text-top;\n  text-align: justify;\n  width: 100%;\n  flex-direction: column;\n  margin-bottom: 0;\n}\n.bodyContent .container_250 .description .nutshell {\n  align-self: left;\n  padding: 0;\n}\n.bodyContent .container_250 .description .paragraph {\n  display: flex;\n  justify-content: center;\n  vertical-align: text-top;\n  text-align: justify;\n  width: 100%;\n  font-family: 'Open Sans', sans-serif;\n  font-weight: 100;\n  flex-direction: column;\n  padding-top: 0.5em;\n  padding-bottom: 0.5em;\n}\n.bodyContent .container_250 .alert {\n  font-family: 'Open Sans', sans-serif;\n  font-weight: 100;\n  display: flex;\n  justify-content: center;\n  vertical-align: text-top;\n  text-align: justify;\n  width: 100%;\n  padding-top: 1.5em;\n  padding-bottom: 1.5em;\n  color: #f00;\n  align-self: center;\n}\n.bodyContent .container_250 .alert .icon {\n  padding-right: 0.5em;\n}\n.bodyContent .container_250 .share {\n  display: flex;\n  justify-content: center;\n  vertical-align: text-top;\n  text-align: justify;\n  width: 100%;\n  padding-top: 1.5em;\n  padding-bottom: 1.5em;\n  flex-direction: column;\n}\n.bodyContent .container_250 .share .title {\n  padding: 0;\n}\n.bodyContent .container_250 .share .links {\n  padding-top: 1em;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-around;\n}\n.bodyContent .container_250 .share .links a {\n  text-decoration: none;\n  color: #75787b;\n  transition: color 200ms;\n}\n.bodyContent .container_250 .share .links a:hover {\n  color: #53a318;\n}\n.bodyContent .container_250 .share .links a:hover .icon {\n  font-size: 1.8em;\n}\n.bodyContent .container_250 .share .links a .icon {\n  transition: font-size 200ms;\n  font-size: 1.6em;\n}\n.bodyContent .container_250 .borderize {\n  border-top-color: #d5d8db;\n  border-top-width: 1px;\n  border-top-style: solid;\n}\n", ""]);
 
 	// exports
 
@@ -822,7 +834,7 @@
 	exports.i(__webpack_require__(5), "");
 
 	// module
-	exports.push([module.id, ".container_1080 {\n  max-width: 1080px;\n  width: 100%;\n}\n.container_670 {\n  max-width: 690px;\n  width: 100%;\n}\n.vertical {\n  flex-direction: column !important;\n}\n.bodyAlso {\n  padding-top: 1.8em;\n  padding-bottom: 4em;\n  display: flex;\n  vertical-align: middle;\n  justify-content: center;\n  flex-direction: row;\n}\n.bodyAlso .container_1080 {\n  display: flex;\n  vertical-align: top;\n  justify-content: center;\n  flex-direction: column;\n}\n.bodyAlso .container_1080 h4 {\n  padding-left: 10px;\n  padding-right: 10px;\n}\n.bodyAlso .container_1080 .columnize {\n  display: flex;\n  vertical-align: middle;\n  justify-content: center;\n  flex-direction: row;\n  justify-content: space-around;\n}\n.bodyAlso .container_1080 .item {\n  transition: box-shadow 100ms linear, top 100ms linear;\n  display: flex;\n  width: 250px;\n  height: 400px;\n  background-color: #f2f2f2;\n  flex-direction: column;\n}\n.bodyAlso .container_1080 .item a {\n  text-decoration: none;\n}\n.bodyAlso .container_1080 .item:hover {\n  box-shadow: 0 0px 5px rgba(0,0,0,0.3);\n}\n.bodyAlso .container_1080 .item .imageWrapper {\n  flex: auto;\n}\n.bodyAlso .container_1080 .item .imageWrapper img {\n  max-width: 100%;\n  background-size: contain;\n}\n.bodyAlso .container_1080 .item .imageWrapper .itemContent {\n  margin: 10px 20px;\n  display: flex;\n  flex-direction: column;\n  align-items: flex-start;\n  vertical-align: top;\n}\n.bodyAlso .container_1080 .item .imageWrapper .itemContent .itemTitle {\n  margin: 0px;\n  padding: 0px;\n  padding-bottom: 10px;\n  color: #000;\n}\n", ""]);
+	exports.push([module.id, ".container_1080 {\n  max-width: 1080px;\n  width: 100%;\n}\n.container_670 {\n  max-width: 690px;\n  width: 100%;\n}\n.container_250 {\n  max-width: 250px;\n  width: 100%;\n}\n.vertical {\n  flex-direction: column !important;\n}\n.bodyAlso {\n  padding-left: 1em;\n  padding-right: 1em;\n  padding-top: 1.8em;\n  padding-bottom: 4em;\n  display: flex;\n  vertical-align: middle;\n  justify-content: center;\n  flex-direction: row;\n}\n.bodyAlso .container_1080 {\n  display: flex;\n  vertical-align: top;\n  justify-content: center;\n  flex-direction: column;\n}\n.bodyAlso .container_1080 h4 {\n  padding-left: 10px;\n  padding-right: 10px;\n}\n.bodyAlso .container_1080 .columnize {\n  display: flex;\n  vertical-align: middle;\n  justify-content: center;\n  flex-direction: row;\n  justify-content: space-around;\n}\n.bodyAlso .container_1080 .item {\n  transition: box-shadow 100ms linear, top 100ms linear;\n  display: flex;\n  width: 210px;\n  height: 400px;\n  background-color: #f2f2f2;\n  flex-direction: column;\n}\n.bodyAlso .container_1080 .item a {\n  text-decoration: none;\n}\n.bodyAlso .container_1080 .item:hover {\n  box-shadow: 0 0px 5px rgba(0,0,0,0.3);\n}\n.bodyAlso .container_1080 .item .imageWrapper {\n  flex: auto;\n}\n.bodyAlso .container_1080 .item .imageWrapper img {\n  max-width: 100%;\n  background-size: contain;\n}\n.bodyAlso .container_1080 .item .imageWrapper .itemContent {\n  margin: 10px 20px;\n  display: flex;\n  flex-direction: column;\n  align-items: flex-start;\n  vertical-align: top;\n}\n.bodyAlso .container_1080 .item .imageWrapper .itemContent .itemTitle {\n  margin: 0px;\n  padding: 0px;\n  padding-bottom: 10px;\n  color: #000;\n}\n", ""]);
 
 	// exports
 
@@ -862,10 +874,94 @@
 	exports.i(__webpack_require__(5), "");
 
 	// module
-	exports.push([module.id, ".container_1080 {\n  max-width: 1080px;\n  width: 100%;\n}\n.container_670 {\n  max-width: 690px;\n  width: 100%;\n}\n.vertical {\n  flex-direction: column !important;\n}\n.footer {\n  padding-top: 4em;\n  padding-bottom: 3em;\n  display: flex;\n  vertical-align: middle;\n  justify-content: center;\n  flex-direction: row;\n}\n.footer .container_1080 {\n  justify-content: space-around;\n}\n", ""]);
+	exports.push([module.id, ".container_1080 {\n  max-width: 1080px;\n  width: 100%;\n}\n.container_670 {\n  max-width: 690px;\n  width: 100%;\n}\n.container_250 {\n  max-width: 250px;\n  width: 100%;\n}\n.vertical {\n  flex-direction: column !important;\n}\n.footer {\n  padding-top: 4em;\n  padding-bottom: 3em;\n  text-align: center;\n  display: flex;\n  vertical-align: middle;\n  justify-content: center;\n  flex-direction: row;\n}\n.footer .container_1080 {\n  justify-content: space-around;\n}\n", ""]);
 
 	// exports
 
+
+/***/ },
+/* 30 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	const twitter = exports.twitter = (d = document, s = 'script', id = 'twitter-wjs') => {
+	  window.twttr = {};
+	  const fjs = d.getElementsByTagName(s)[0];
+	  const t = window.twttr || {};
+	  if (d.getElementById(id)) return t;
+	  const js = d.createElement(s);
+	  js.id = id;
+	  js.src = 'https://platform.twitter.com/widgets.js';
+	  fjs.parentNode.insertBefore(js, fjs);
+
+	  t._e = [];
+	  t.ready = f => {
+	    t._e.push(f);
+	  };
+	  return t;
+	};
+
+/***/ },
+/* 31 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	const facebook = exports.facebook = () => {
+	  window.fbAsyncInit = () => {
+	    FB.init({
+	      appId: '156991178053696',
+	      xfbml: true,
+	      version: 'v2.6'
+	    });
+	  };
+
+	  const f = (d, s, id) => {
+	    const fjs = d.getElementsByTagName(s)[0];
+	    if (d.getElementById(id)) {
+	      return;
+	    }
+	    const js = d.createElement(s);js.id = id;
+	    js.src = '//connect.facebook.net/en_US/sdk.js';
+	    fjs.parentNode.insertBefore(js, fjs);
+	  };
+	  f(document, 'script', 'facebook-jssdk');
+	};
+
+/***/ },
+/* 32 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	exports.default = document => {
+	  const facebookShare = e => {
+	    e.preventDefault();
+	    debugger;
+	    FB.ui({
+	      method: 'share',
+	      display: 'popup',
+	      href: 'http://fforr.es/gpn'
+	    }, response => {
+	      console.log(response);
+	    });
+	  };
+	  const els = document.getElementsByClassName('facebook-share-button');
+	  for (const el of els) {
+	    el.addEventListener('click', facebookShare);
+	  }
+	};
 
 /***/ }
 /******/ ]);
