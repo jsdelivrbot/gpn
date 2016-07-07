@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --progress --colors",
     "start": "webpack-dev-server --progress --colors",
-    "dev": "webpack-dev-server --progress --colors"
+    "dev": "webpack-dev-server --progress --colors",
+    "yolo": "npm run build && git add . && git commit -m update && git push"
   },
   "author": "fforres",
   "license": "MIT",
