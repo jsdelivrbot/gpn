@@ -15,14 +15,16 @@ paddingV(){
   horizontalCenter()
   .container_1080
     .columnize
-      display flex;
-      flex-direction row;
+      display flex
+      flex-direction row
+      @media screen and (max-width: 560px)
+        flex-direction column
       img
         width 100%
         height auto
         max-width 670px
       .bodyDescription
-        align justify;
+        align justify
         a
           text-decoration none;
           color gpn_green
@@ -33,83 +35,92 @@ paddingV(){
       .map
         width 50%
         padding-bottom 4em
-  .bodySize
-    display flex
-    width 250px
-  .container_250
-    padding 1em
-    display flex
-    align-items flex-end;
-    flex-direction column;
-    vertical-align top;
-    justify-content center
-    text-align center;
-    .buttonWrapper
-      display flex
-      flex 1
-      justify-content center
-      vertical-align middle;
-      width 100%
+  .rightSide
+     display flex
+     justify-content center;
 
-      .button
-        sans(400)
-        width 100%
+  .bodySize
+    @media screen and (min-width: 560px)
+      width 250px
+    @media screen and (max-width: 559px)
+      display flex
+      width auto
+      padding 1em
+
+    .container_250
+      padding 1em
+      display flex
+      align-items flex-end;
+      flex-direction column;
+      vertical-align top;
+      justify-content center
+      text-align center;
+      .buttonWrapper
         display flex
+        flex 1
         justify-content center
         vertical-align middle;
-        background-color gpn_green
-        border-radius 80px
-        font-size 1.3em
-        padding 1em
-        margin-bottom 1em
-        color gpn_white
+        width 100%
 
-    .description
-      sans(100)
-      sideText()
-      flex-direction column;
-      margin-bottom 0
-      .nutshell
-        align-self left
-        padding 0
-      .paragraph
-        sideText()
+        .button
+          sans(400)
+          width 100%
+          display flex
+          justify-content center
+          vertical-align middle;
+          background-color gpn_green
+          border-radius 80px
+          font-size 1.3em
+          padding 1em
+          margin-bottom 1em
+          color gpn_white
+
+      .description
         sans(100)
+        sideText()
         flex-direction column;
-        paddingV(0.5em)
+        margin-bottom 0
+        .nutshell
+          align-self left
+          padding 0
+        .paragraph
+          sideText()
+          sans(100)
+          flex-direction column;
+          paddingV(0.5em)
 
-    .alert
-      sans(100)
-      sideText()
-      paddingV(1.5em)
-      margin-bottom 0
-      color red
-      align-self center;
-      .icon
-        padding-right 0.5em
-    .share
-      sideText()
-      paddingV(1.5em)
-      flex-direction column;
-      .title
-        padding 0
-      .links
-        padding-top 1em
-        display flex;
-        flex-direction row;
-        justify-content space-around
-        a
-          text-decoration none;
-          color gpn_grey
-          transition color 200ms
-          &:hover
-            color gpn_green
+      .alert
+        sans(100)
+        sideText()
+        paddingV(1.5em)
+        margin-bottom 0
+        color red
+        align-self center;
+        .icon
+          padding-right 0.5em
+      .share
+        sideText()
+        paddingV(1.5em)
+        flex-direction column;
+        .title
+          padding 0
+        .links
+          padding-top 1em
+          display flex;
+          flex-direction row;
+          justify-content space-around
+          a
+            text-decoration none;
+            color gpn_grey
+            transition color 200ms
+            &:hover
+              color gpn_green
+              .icon
+                font-size 1.8em
             .icon
-              font-size 1.8em
-          .icon
-            transition font-size 200ms
-            font-size 1.6em
-    .borderize
-      border-top-color gpn_lighter_grey
-      border-top-width 1px
-      border-top-style solid
+              transition font-size 200ms
+              font-size 1.6em
+      .borderize
+        border-top-color gpn_lighter_grey
+        border-top-width 1px
+        border-top-style solid
