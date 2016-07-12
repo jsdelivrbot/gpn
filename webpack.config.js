@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const path = require('path');
 module.exports = {
   entry: './js/entry.js',
@@ -12,11 +13,13 @@ module.exports = {
       filename: 'index.html',
       template: `${__dirname}/template/index.hbs`,
     }),
+    new ExtractTextPlugin('styles.css'),
   ],
   module: {
     loaders: [
       { test: /\.css$/, loader: 'style!css' },
-      { test: /\.styl$/, loader: 'style-loader!css-loader!stylus-loader' },
+      { test: /\.styl$/,
+        loader: ExtractTextPlugin.extract('css-loader!stylus-loader?resolve url') },
       { test: /\.(ttf|eot|svg|ttf|otf|woff(2)?)(\?[a-z0-9=&.]+)?$/, loader: 'file-loader' },
       {
         test: /\.js$/,
