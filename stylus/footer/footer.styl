@@ -1,8 +1,14 @@
 @import '../_vars.styl'
 .footer
+  padding: 1.5em
   padding-top: 4em
   padding-bottom: 3em
-  text-align: center;
+  @media screen and (max-width: 779px)
+    padding: 2em
+    padding-top: 2em
+    padding-bottom: 2em
+
+  text-align: center
   horizontalCenter()
   .container_1080
     justify-content: space-around;
