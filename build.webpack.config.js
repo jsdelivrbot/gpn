@@ -1,19 +1,15 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const Purify = require('purifycss-webpack-plugin');
 const path = require('path');
+
 module.exports = {
-  entry: [
-    'webpack/hot/only-dev-server',
-    './js/entry.js',
-  ],
+  entry: './js/entry.js',
   output: {
     path: __dirname,
     filename: 'bundle.js',
   },
-  devServer: {
-    hot: true,
-  },
-  devtool: 'eval',
+  devtool: 'cheap-module-source-map',
   plugins: [
     new HtmlWebpackPlugin({
       hash: true,
@@ -21,16 +17,22 @@ module.exports = {
       template: `${__dirname}/template/index.hbs`,
     }),
     new ExtractTextPlugin('styles.css'),
+    new Purify({
+      basePath: __dirname,
+      paths: [
+        'template/also/*.hbs',
+        'template/body/*.hbs',
+        'template/footer/*.hbs',
+        'template/searchBar/*.hbs',
+        'template/*.hbs',
+      ],
+    }),
   ],
   module: {
     loaders: [
-      { test: /\.css$/,
-        exclude: /node_modules/,
-        loader: 'style!css' },
+      { test: /\.css$/, loader: 'style!css' },
       { test: /\.styl$/,
-        exclude: /node_modules/,
-        loaders: ['style-loader', 'css-loader', 'stylus-loader?resolve url'],
-      },
+        loader: ExtractTextPlugin.extract('css-loader!stylus-loader?resolve url') },
       { test: /\.(ttf|eot|svg|ttf|otf|woff(2)?)(\?[a-z0-9=&.]+)?$/, loader: 'file-loader' },
       {
         test: /\.js$/,

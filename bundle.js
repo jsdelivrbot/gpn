@@ -56,7 +56,11 @@
 
 	var _pinterest = __webpack_require__(22);
 
-	var _sharing = __webpack_require__(23);
+	var _button = __webpack_require__(23);
+
+	var _button2 = _interopRequireDefault(_button);
+
+	var _sharing = __webpack_require__(24);
 
 	var _sharing2 = _interopRequireDefault(_sharing);
 
@@ -312,6 +316,18 @@
 
 	'use strict';
 
+	document.getElementById('buyMe').addEventListener('click', () => {
+	  alert(`Well... hadn't done anything with this button yet...
+
+	Using old school alerts are still a thing right?`);
+		});
+
+/***/ },
+/* 24 */
+/***/ function(module, exports) {
+
+	'use strict';
+
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
@@ -335,3 +351,4 @@
 
 /***/ }
 /******/ ]);
+//# sourceMappingURL=bundle.js.map

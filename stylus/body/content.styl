@@ -40,15 +40,12 @@ paddingV(){
      justify-content center;
 
   .bodySize
-    @media screen and (min-width: 560px)
-      width 250px
-    @media screen and (max-width: 559px)
-      display flex
-      width auto
+    @media screen and (min-width: 780px)
+      max-width 250px
+    @media screen and (max-width: 779px)
       padding 1em
 
     .container_250
-      padding 1em
       display flex
       align-items flex-end;
       flex-direction column;
