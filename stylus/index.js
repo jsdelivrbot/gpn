@@ -1,7 +1,5 @@
 export { vars } from './_vars.styl';
 export { base } from './base.styl';
-
-
 export { fonts } from './fonts.styl';
 // SearchBar stylus
 export { searchBar } from './searchBar/searchBar.styl';

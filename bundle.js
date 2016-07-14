@@ -93,6 +93,7 @@
 	(0, _facebook.facebook)();
 	(0, _pinterest.pinterest)();
 	(0, _sharing2.default)(document);
+	(0, _button2.default)(document);
 
 /***/ },
 /* 1 */
@@ -100,11 +101,19 @@
 
 	'use strict';
 
-	document.getElementById('buyMe').addEventListener('click', () => {
-	  alert(`Well... hadn't done anything with this button yet...
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
-	Using old school alerts are still a thing right?`);
-		});
+	exports.default = document => {
+	  document.getElementById('buyMe').addEventListener('click', () => {
+	    alert(`Well... hadn't done anything with this button yet...
+
+	Using old school alerts are still a thing Right?
+
+	    Right??`);
+	  });
+	};
 
 /***/ },
 /* 2 */

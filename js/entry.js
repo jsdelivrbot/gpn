@@ -8,3 +8,4 @@ window.twttr = twitter();
 facebook();
 pinterest();
 sharing(document);
+button(document);
