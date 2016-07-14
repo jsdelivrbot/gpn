@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const Purify = require('purifycss-webpack-plugin');
@@ -26,7 +27,12 @@ module.exports = {
         'template/searchBar/*.hbs',
         'template/*.hbs',
       ],
+      purifyOptions: {
+        minify: true,
+      },
     }),
+    new webpack.optimize.DedupePlugin(),
+    new webpack.optimize.OccurrenceOrderPlugin(true),
   ],
   module: {
     loaders: [
