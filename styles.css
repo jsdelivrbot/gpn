@@ -736,7 +736,7 @@ hr.light {
   padding-bottom: 0.1em;
 }
 
-@media screen and (max-width: 779px) {
+@media screen and (max-width: 820px) {
   .bodyTitle .container_1080 .subtitleText {
     text-align: right;
     padding-top: 0.5em;
@@ -789,9 +789,10 @@ hr.light {
 .bodyContent .container_1080 .columnize {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 820px) {
   .bodyContent .container_1080 .columnize {
     flex-direction: column;
   }
@@ -801,6 +802,12 @@ hr.light {
   width: 100%;
   height: auto;
   max-width: 670px;
+}
+
+@media screen and (max-width: 820px) {
+  .bodyContent .container_1080 .columnize img {
+    max-width: none;
+  }
 }
 
 .bodyContent .container_1080 .columnize .bodyDescription {
@@ -825,18 +832,27 @@ hr.light {
   padding-bottom: 4em;
 }
 
+@media screen and (max-width: 820px) {
+  .bodyContent .leftSide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .bodyContent .rightSide {
   display: flex;
   justify-content: center;
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 820px) {
   .bodyContent .bodySize {
-    max-width: 250px;
+    padding-left: 2em;
+    padding-right: 2em;
   }
 }
 
-@media screen and (max-width: 779px) {
+@media screen and (max-width: 819px) {
   .bodyContent .bodySize {
     padding: 1em;
   }
@@ -1018,25 +1034,29 @@ hr.light {
 }
 
 .bodyAlso .container_1080 .item {
+  margin: 0.5em;
   margin-bottom: 2em;
   transition: box-shadow 100ms linear, top 100ms linear;
   display: flex;
-  width: 210px;
-  height: 400px;
+  width: 200px;
+  height: 370px;
   background-color: #f2f2f2;
   flex-direction: column;
 }
 
 .bodyAlso .container_1080 .item a {
   text-decoration: none;
+  height: 100%;
 }
 
-.bodyAlso .container_1080 .item:hover {
+.bodyAlso .container_1080 .item a:hover {
   box-shadow: 0 0px 5px rgba(0,0,0,0.3);
 }
 
 .bodyAlso .container_1080 .item .imageWrapper {
   flex: auto;
+  max-height: 137px;
+  overflow: hidden;
 }
 
 .bodyAlso .container_1080 .item .imageWrapper img {
@@ -1044,7 +1064,7 @@ hr.light {
   background-size: contain;
 }
 
-.bodyAlso .container_1080 .item .imageWrapper .itemContent {
+.bodyAlso .container_1080 .item .itemContent {
   margin: 10px 20px;
   display: flex;
   flex-direction: column;
@@ -1052,11 +1072,10 @@ hr.light {
   vertical-align: top;
 }
 
-.bodyAlso .container_1080 .item .imageWrapper .itemContent .itemTitle {
+.bodyAlso .container_1080 .item .itemContent .itemTitle {
   margin: 0px;
+  margin-bottom: 1em;
   padding: 0px;
-  padding-bottom: 10px;
-  color: #000;
 }
 
 .container_1080 {
