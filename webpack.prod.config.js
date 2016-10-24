@@ -4,6 +4,7 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
+  devtool: 'source-map',
   entry: './js/entry.js',
   output: {
     path: path.resolve(__dirname, 'build'),
@@ -26,8 +27,8 @@ module.exports = {
         minifyCSS: true,
         minifyURLs: true,
       },
-      inject: true,
       template: `${__dirname}/template/index.hbs`,
+      inject: true,
     }),
     new ExtractTextPlugin({
       filename: 'styles.css',
