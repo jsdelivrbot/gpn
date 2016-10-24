@@ -61,7 +61,9 @@ module.exports = {
       { test: /\.css$/, loader: 'style!css' },
       { test: /\.styl$/, loader: 'style-loader!css-loader!stylus-loader' },
       { test: /\.(ttf|eot|svg|ttf|otf|woff(2)?)(\?[a-z0-9=&.]+)?$/, loader: 'file-loader' },
-      {
+      { test: /\.(jpeg|png)$/,
+        loader: 'file?name=[path][name].[ext]&context=./build/images',
+      }, {
         test: /\.js$/,
         exclude: /(node_modules|bower_components)/,
         loader: 'babel-loader', // 'babel-loader' is also a legal name to reference
