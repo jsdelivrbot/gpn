@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "./node_modules/.bin/rimraf ./build && ./node_modules/.bin/cross-env NODE_ENV=production ./node_modules/.bin/webpack --config ./webpack.prod.config.js --progress --colors && npm run copy",
+    "build": "./node_modules/.bin/rimraf ./build && ./node_modules/.bin/cross-env NODE_ENV=production ./node_modules/.bin/webpack --config ./build.webpack.config.js --progress --colors && npm run copy",
     "copy": "rimraf ./build/images && ./node_modules/.bin/copyfiles images/* build/",
     "deploy": "./node_modules/.bin/gh-pages --dotfiles --dist ./build --branch gh-pages",
     "yolo": "npm run build && npm run deploy",

@@ -5,16 +5,27 @@ const Purify = require('purifycss-webpack-plugin');
 const path = require('path');
 
 module.exports = {
+  devtool: 'source-map',
   entry: './js/entry.js',
   output: {
-    path: __dirname,
+    path: path.resolve(__dirname, 'build'),
     filename: 'bundle.js',
   },
-  devtool: 'cheap-module-source-map',
   plugins: [
     new HtmlWebpackPlugin({
       hash: true,
       filename: 'index.html',
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true,
+        removeRedundantAttributes: true,
+        useShortDoctype: true,
+        removeEmptyAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        keepClosingSlash: true,
+        minifyJS: true,
+        minifyCSS: true,
+      },
       template: `${__dirname}/template/index.hbs`,
     }),
     new ExtractTextPlugin('styles.css'),
@@ -30,6 +41,12 @@ module.exports = {
       purifyOptions: {
         minify: true,
       },
+    }),
+    new webpack.optimize.CommonsChunkPlugin({
+      name: 'vendor',
+      children: true,
+      minChunks: 2,
+      async: true,
     }),
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.OccurrenceOrderPlugin(true),
