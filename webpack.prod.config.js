@@ -68,7 +68,7 @@ module.exports = {
         exclude: /(node_modules|bower_components)/,
         loader: 'babel-loader', // 'babel-loader' is also a legal name to reference
         query: {
-          presets: ['node6'],
+          presets: ['node6', 'es2015', 'stage-0'],
         },
       },
       { test: /\.(handlebars|hbs)$/, loader: 'handlebars-loader',
